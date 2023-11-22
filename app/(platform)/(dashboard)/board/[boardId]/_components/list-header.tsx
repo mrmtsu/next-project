@@ -1,6 +1,7 @@
 "use client";
 
 import { updateList } from "@/actions/update-list";
+import { ListOptions } from "@/app/(platform)/(dashboard)/board/[boardId]/_components/list-options";
 import { FormInput } from "@/components/form/form-input";
 import { useAction } from "@/hooks/use-action";
 import { List } from "@prisma/client";
@@ -95,6 +96,7 @@ export const ListHeader = ({ data }: ListHeaderProps) => {
           {data.title}
         </div>
       )}
+      <ListOptions onAddCard={() => {}} data={data} />
     </div>
   );
 };
