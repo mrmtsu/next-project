@@ -1,7 +1,7 @@
 "use server";
 
 import { CopyList } from "@/actions/copy-list/schema";
-import { InputType, ReturnType } from "@/actions/delete-list/types";
+import { InputType, ReturnType } from "@/actions/copy-list/types";
 import { createSafeAction } from "@/lib/create-safe-action";
 import { db } from "@/lib/db";
 import { auth } from "@clerk/nextjs";

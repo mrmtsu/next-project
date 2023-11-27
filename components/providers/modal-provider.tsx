@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { CardModal } from "@/components/modal/card-modal";
+import { CardModal } from "@/components/modals/card-modal";
 
 export const ModalProvider = () => {
   const [isMounted, setIsMounted] = useState(false);
